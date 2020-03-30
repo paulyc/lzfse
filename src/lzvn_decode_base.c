@@ -88,7 +88,7 @@ void lzvn_decode(lzvn_decoder_state *state) {
 
   const unsigned char *src_ptr = state->src;
   unsigned char *dst_ptr = state->dst;
-  size_t D = state->d_prev;
+  ssize_t D = state->d_prev;
   size_t M;
   size_t L;
   size_t opc_len;
